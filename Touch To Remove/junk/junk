@@ -1,0 +1,9 @@
+func EndMenuVC()
+{
+    let VC = EndMenuVC(fileNamed: "EndMenuVC")
+    let transition = SKTransition.moveIn(with: .right, duration: 1)
+           self.view?.presentScene(VC, transition: transition)
+    self.removeAllChildren()
+    self.removeAllActions()
+    self.scene?.removeFromParent()
+}

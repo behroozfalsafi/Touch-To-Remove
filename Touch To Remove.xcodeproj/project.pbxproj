@@ -15,8 +15,13 @@
 		EE7310332429DA62002DF243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7310312429DA62002DF243 /* Main.storyboard */; };
 		EE7310352429DA63002DF243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7310342429DA63002DF243 /* Assets.xcassets */; };
 		EE7310382429DA63002DF243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7310362429DA63002DF243 /* LaunchScreen.storyboard */; };
-		EE7310432429DA63002DF243 /* Touch_To_RemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7310422429DA63002DF243 /* Touch_To_RemoveTests.swift */; };
 		EE73104E2429DA63002DF243 /* Touch_To_RemoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73104D2429DA63002DF243 /* Touch_To_RemoveUITests.swift */; };
+		EEB8B791243670A70018F113 /* EndMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B790243670A70018F113 /* EndMenuVC.swift */; };
+		EEB8B797243698050018F113 /* SartMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8B796243698050018F113 /* SartMenuVC.swift */; };
+		EEB8B79D2436A6DF0018F113 /* junk in Resources */ = {isa = PBXBuildFile; fileRef = EEB8B79C2436A6DF0018F113 /* junk */; };
+		EEBCADD7243701300079E47F /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = EEBCADD6243701300079E47F /* Starfield.sks */; };
+		EEBCADD9243707270079E47F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCADD8243707270079E47F /* TableViewCell.swift */; };
+		EEBCADDB243707F40079E47F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBCADDA243707F40079E47F /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +53,16 @@
 		EE7310372429DA63002DF243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE7310392429DA63002DF243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE73103E2429DA63002DF243 /* Touch To RemoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch To RemoveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE7310422429DA63002DF243 /* Touch_To_RemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_To_RemoveTests.swift; sourceTree = "<group>"; };
 		EE7310442429DA63002DF243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7310492429DA63002DF243 /* Touch To RemoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch To RemoveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE73104D2429DA63002DF243 /* Touch_To_RemoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_To_RemoveUITests.swift; sourceTree = "<group>"; };
 		EE73104F2429DA63002DF243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB8B790243670A70018F113 /* EndMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndMenuVC.swift; sourceTree = "<group>"; };
+		EEB8B796243698050018F113 /* SartMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SartMenuVC.swift; sourceTree = "<group>"; };
+		EEB8B79C2436A6DF0018F113 /* junk */ = {isa = PBXFileReference; lastKnownFileType = text; name = junk; path = junk/junk; sourceTree = "<group>"; };
+		EEBCADD6243701300079E47F /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		EEBCADD8243707270079E47F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EEBCADDA243707F40079E47F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +115,20 @@
 			children = (
 				EE7310272429DA62002DF243 /* AppDelegate.swift */,
 				EE7310292429DA62002DF243 /* GameScene.sks */,
+				EEBCADD6243701300079E47F /* Starfield.sks */,
 				EE73102B2429DA62002DF243 /* Actions.sks */,
+				EEBCADD8243707270079E47F /* TableViewCell.swift */,
+				EEB8B796243698050018F113 /* SartMenuVC.swift */,
 				EE73102D2429DA62002DF243 /* GameScene.swift */,
+				EEB8B790243670A70018F113 /* EndMenuVC.swift */,
 				EE73102F2429DA62002DF243 /* GameViewController.swift */,
+				EEBCADDA243707F40079E47F /* Model.swift */,
 				EE7310312429DA62002DF243 /* Main.storyboard */,
 				EE7310342429DA63002DF243 /* Assets.xcassets */,
 				EE7310362429DA63002DF243 /* LaunchScreen.storyboard */,
 				EE7310392429DA63002DF243 /* Info.plist */,
+				EEB8B79C2436A6DF0018F113 /* junk */,
+				EEB8B785243524B20018F113 /* junk */,
 			);
 			path = "Touch To Remove";
 			sourceTree = "<group>";
@@ -119,7 +136,6 @@
 		EE7310412429DA63002DF243 /* Touch To RemoveTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE7310422429DA63002DF243 /* Touch_To_RemoveTests.swift */,
 				EE7310442429DA63002DF243 /* Info.plist */,
 			);
 			path = "Touch To RemoveTests";
@@ -132,6 +148,13 @@
 				EE73104F2429DA63002DF243 /* Info.plist */,
 			);
 			path = "Touch To RemoveUITests";
+			sourceTree = "<group>";
+		};
+		EEB8B785243524B20018F113 /* junk */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = junk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBCADD7243701300079E47F /* Starfield.sks in Resources */,
 				EE7310332429DA62002DF243 /* Main.storyboard in Resources */,
 				EE73102A2429DA62002DF243 /* GameScene.sks in Resources */,
 				EE7310352429DA63002DF243 /* Assets.xcassets in Resources */,
 				EE7310382429DA63002DF243 /* LaunchScreen.storyboard in Resources */,
+				EEB8B79D2436A6DF0018F113 /* junk in Resources */,
 				EE73102C2429DA62002DF243 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBCADDB243707F40079E47F /* Model.swift in Sources */,
+				EEB8B791243670A70018F113 /* EndMenuVC.swift in Sources */,
+				EEB8B797243698050018F113 /* SartMenuVC.swift in Sources */,
 				EE73102E2429DA62002DF243 /* GameScene.swift in Sources */,
+				EEBCADD9243707270079E47F /* TableViewCell.swift in Sources */,
 				EE7310302429DA62002DF243 /* GameViewController.swift in Sources */,
 				EE7310282429DA62002DF243 /* AppDelegate.swift in Sources */,
 			);
@@ -277,7 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7310432429DA63002DF243 /* Touch_To_RemoveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
