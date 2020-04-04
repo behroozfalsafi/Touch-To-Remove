@@ -5,10 +5,8 @@
 //  Created by Behrooz Falsafi on 3/1/20.
 //  Copyright © 2020 Behrooz Falsafi. All rights reserved.
 //
-
 import Foundation
 import UIKit
-
 //create an enum so we can work with certain game type
 enum gameType{
     case easy

@@ -1,21 +1,16 @@
 //
 //  GameViewController.swift
-//  Pong4
 //
 //  Created by Behrooz Falsafi on 3/1/20.
 //  Copyright © 2020 Behrooz Falsafi. All rights reserved.
-//
-
 import UIKit
 import SpriteKit
 import GameplayKit
 
 //setup currentGameType variable here so we can pass it alone from menuVC to GameScene.swift
-
 class EndMenuVC: UIViewController {
 
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         //create a view
         if let view = self.view as! SKView? {
@@ -30,7 +25,6 @@ class EndMenuVC: UIViewController {
             }
             
             view.ignoresSiblingOrder = true
-            
             view.showsFPS = true
             view.showsNodeCount = true
         }
@@ -40,7 +34,6 @@ class EndMenuVC: UIViewController {
         performSegue(withIdentifier: "name", sender: self)
     }
     
-
     override var shouldAutorotate: Bool {
         return true
     }
@@ -56,6 +49,4 @@ class EndMenuVC: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
-    
 }
