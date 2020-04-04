@@ -8,7 +8,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
-
+//sdfsdfsdfsdf
 //setup currentGameType variable here so we can pass it alone from menuVC to GameScene.swift
 var currentGameType = gameType.medium
 let colorArray = [0,191,255,0]
