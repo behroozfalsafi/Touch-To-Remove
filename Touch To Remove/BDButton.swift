@@ -57,7 +57,7 @@ class BDButton: SKNode {
         }
     }
     
-    override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isEnabled {
             for touch in touches {
                 let location: CGPoint = touch.location(in: self)
@@ -72,7 +72,7 @@ class BDButton: SKNode {
         }
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isEnabled {
             for touch in touches {
                 let location: CGPoint = touch.location(in: self)
