@@ -9,15 +9,6 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-    //its better not to make this var in didmove because it will not be eaily cleared.
-//    var playButton: BDButton = {
-//       // var button = BDButton(imageNamed: "ButtonPlay", buttonAction: {
-//           // ACTManager.shared.transition(self, toScene: .EndMenuVC, transition:
-//              //  SKTransition.moveIn(with: .right, duration: 0.5))
-//        //})
-//        //button.zPosition = 1
-//        return button
-//    }()
     var starfield:SKEmitterNode!
     var alien = SKSpriteNode()
     var alien2 = SKSpriteNode()
@@ -29,11 +20,11 @@ class GameScene: SKScene {
     var viewController: EndMenuVC!
     var level:Int = 1
     var game = false
-     var timer : Timer? = nil {
-           willSet {
-               timer?.invalidate()
-           }
-       }
+    var timer : Timer? = nil {
+        willSet {
+            timer?.invalidate()
+        }
+    }
     var timeCounter:Int = 5 {
         didSet {
             timerLabel.text = "Timer: \(timeCounter)"
@@ -72,9 +63,8 @@ class GameScene: SKScene {
         self.addChild(timerLabel)
         self.addChild(gameOverLabel)
         self.addChild(youWinLabel)
-        //--no longer needed. we are going wtih the new aproach
         //add button
-        //addPlayButton()
+        addPlayButton()
         startGame()
     }
     
@@ -85,6 +75,7 @@ class GameScene: SKScene {
         alien2Valid = false
         startTimer()
     }
+    
 
     func createAlien(){
         let randomY = GKRandomDistribution(lowestValue: Int(-self.frame.size.width / 2 + 100) , highestValue: Int(self.frame.size.width / 2 - 100))
@@ -142,14 +133,14 @@ class GameScene: SKScene {
             }
             //------no longer needed. using the new approach
             //enumerate for new button
-//            enumerateChildNodes(withName: "//*", using: { (node, stop) in
-//                if node.name == "playButton" {
-//                    if node.contains(touch.location(in: self)) {
-//                        print("cliked the button")
-//                    }
-//
-//                }
-//            })
+            enumerateChildNodes(withName: "//*", using: { (node, stop) in
+                if node.name == "playButton" {
+                    if node.contains(touch.location(in: self)) {
+                        print("cliked the button")
+                    }
+
+                }
+            })
         }
     }
     
@@ -182,12 +173,12 @@ class GameScene: SKScene {
                }
     }
     //------no longer needed. using the new approach
-//    func addPlayButton() {
-//        let playButton = SKSpriteNode(imageNamed: "ButtonPlay")
-//        playButton.name = "playButton"
-//        playButton.position = CGPoint.zero
-//        addChild(playButton)
-//    }
+    func addPlayButton() {
+        let playButton = SKSpriteNode(imageNamed: "ButtonPlay")
+        playButton.name = "playButton"
+        playButton.position = CGPoint.zero
+        addChild(playButton)
+    }
     
     override func update(_ currentTime: TimeInterval) {
         //move enemy level back and forth depending on the diffialty of the game.
